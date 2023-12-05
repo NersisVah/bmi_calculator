@@ -23,7 +23,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BM1I CALCULATOR'),
+        title: Text('Baaa CALCULATOR'),
       ),
       body:Center(
         child: Text('Body Text'),
