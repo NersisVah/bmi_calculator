@@ -7,6 +7,12 @@ import 'input_page.dart';
 
 
 class ResultsPage extends StatelessWidget {
+  late final String result;
+  late final String bmiResult;
+  late final String interpretation;
+
+
+  ResultsPage({required this.result, required this.bmiResult, required this.interpretation});
 
   @override
   Widget build(BuildContext context) {
@@ -33,9 +39,9 @@ class ResultsPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text('normal',style: kResultTextStyle,),
-                    Text('18,3',style: kBMITextStyle,),
-                    Text('Your BMI result is quite low,you should eat more!', style: KLabelTextStyle,textAlign: TextAlign.center,)
+                    Text(result.toUpperCase(),style: kResultTextStyle,),
+                    Text(bmiResult,style: kBMITextStyle,),
+                    Text(interpretation, style: KLabelTextStyle,textAlign: TextAlign.center,)
 
                   ],
                 ),
