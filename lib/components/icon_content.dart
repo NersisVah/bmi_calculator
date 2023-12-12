@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-const labelTextStyle = TextStyle(fontSize: 18,
-  color: Color(0xff8d8e98),);
+import '../constants.dart';
+
+
+import '../Screens/input_page.dart';
+
 class IconContent extends StatelessWidget {
   final IconData icon;
-  final String string;
+  final Gender gender;
 
-  IconContent(this.icon, this.string);
+  IconContent(this.icon, this.gender);
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +20,8 @@ class IconContent extends StatelessWidget {
           height: 15,
         ),
         Text(
-          string,
-          style: labelTextStyle,
+          gender.toString(),
+          style: KLabelTextStyle,
         ),
       ],
     );
